@@ -62,7 +62,7 @@ export default {
       this.searchText = value;
       this.isFetching = true;
       axios
-        .get("http://www.omdbapi.com/?apikey=67452df7&type=movie&s=" + value)
+        .get("https://www.omdbapi.com/?apikey=67452df7&type=movie&s=" + value)
         .then((response) => {
           console.log(response);
           this.isFetching = false;
