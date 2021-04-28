@@ -32,11 +32,11 @@ export default {
   },
   watch: {
     search: function () {
+        this.$emit("searchUpdated", this.search);
     },
   },
   methods: {
     updateSearchText() {
-            this.$emit("searchUpdated", this.search);
     },
   },
 };

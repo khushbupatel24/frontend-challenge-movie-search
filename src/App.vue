@@ -58,7 +58,7 @@ export default {
   methods: {
     updateSearchText(value) {
       if (value == "" || value == null) {
-        alert("Please enter something in search text");
+        // alert("Please enter something in search text");
       }
       this.searchText = value;
       this.isFetching = true;
