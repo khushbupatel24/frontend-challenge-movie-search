@@ -65,8 +65,8 @@ export default {
       axios
         .get("https://www.omdbapi.com/?apikey=67452df7&type=movie&s=" + value)
         .then((response) => {
-          console.log(response);
           this.isFetching = false;
+          this.searchResults = []
           if (response.data.Response != "False") {
             this.searchResults = response.data.Search;
           }
