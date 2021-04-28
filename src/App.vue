@@ -52,7 +52,8 @@ export default {
     };
   },
   created() {
-    this.nominatedMovies = JSON.parse(localStorage.getItem("movies"))
+      if(JSON.parse(localStorage.getItem("movies")) != undefined)
+        this.nominatedMovies = JSON.parse(localStorage.getItem("movies"))
   },
   methods: {
     updateSearchText(value) {
